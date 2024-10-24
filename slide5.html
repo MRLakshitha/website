@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPoint Clone</title>
+    <link rel="stylesheet" href="slide5.css">
+</head>
+<body>
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <!-- Slide management -->
+        <button onclick="addSlide()">Add Slide</button>
+        <button onclick="deleteSlide()">Delete Slide</button>
+
+        <!-- Text Styling -->
+        <select id="fontFamily" onchange="changeFontFamily()">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Georgia">Georgia</option>
+        </select>
+        <input type="number" id="fontSize" onchange="changeFontSize()" placeholder="Font Size" />
+        <button onclick="toggleBold()">Bold</button>
+        <button onclick="toggleItalic()">Italic</button>
+        <input type="color" id="fontColor" onchange="changeFontColor()" />
+
+        <!-- Shape Management -->
+        <button onclick="drawRectangle()">Rectangle</button>
+        <button onclick="drawCircle()">Circle</button>
+        <button onclick="drawLine()">Line</button>
+
+        <!-- Image Upload -->
+        <input type="file" id="imageUpload" onchange="uploadImage()" />
+    </div>
+
+    <!-- Slides Navigation -->
+    <div class="slides-list">
+        <ul id="slidesNav"></ul>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="workspace">
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+
+    <script src="slide5.js"></script>
+</body>
+</html>

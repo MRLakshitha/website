@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Toolbar Section */
+  .toolbar {
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Tabs (like Home, Insert, etc.) */
+  .tabs {
+    display: flex;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    margin-right: 5px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #ff8c00;
+    color: white;
+  }
+  
+  .tool-buttons {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .tool-btn {
+    padding: 10px;
+    margin-right: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .tool-btn:hover {
+    background-color: #eee;
+  }
+  
+  /* Slide Area */
+  .slide-container {
+    /* display: flex;
+    flex-grow: 1;
+    padding: 20px; */
+    display: flex;
+  height: 100%;
+  padding: 20px;
+  }
+  
+  /* Slide Thumbnails */
+  .slide-thumbnails {
+    /* width: 200px;
+    border-right: 2px solid #ddd;
+    padding-right: 10px; */
+    width: 200px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .slide{
+    padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  cursor: pointer;
+  text-align: center;
+  }
+  .slide :hover{
+    background-color: #f1f1f1
+  }
+  .add-slide-btn {
+    /* padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer; 
+    margin-bottom: 20px;*/
+    padding: 10px 20px;
+    margin-right: 5px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-slide-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .slides-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .slide-thumbnail {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .slide-thumbnail.active {
+    border: 2px solid #007bff;
+  }
+  
+  /* Slide Editing Area */
+  .slide-editor {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+  }
+  
+  .slide {
+    width: 800px;
+    height: 450px;
+    background-color: #ffebcd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  

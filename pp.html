@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPoint Tool</title>
+    <link rel="stylesheet" href="pp.css">
+</head>
+<body>
+    <div class="toolbar">
+        <div class="tabs">
+            <button class="tab active">Home</button>
+            <button class="tab">Insert</button>
+            <button class="tab">Design</button>
+            <button class="tab">Transitions</button>
+            <button class="tab">Animations</button>
+            <button class="tab">Review</button>
+            <button class="tab">View</button>
+        </div>
+        <button onclick="addSlide()">Add Slide</button>
+        <button onclick="deleteSlide()">Delete Slide</button>
+        <button onclick="addTextBox()">Add Text Box</button>
+        <button onclick="uploadImage()">Upload Image</button>
+
+        <button onclick="addRectangle()">Add Rectangle</button>
+    <button onclick="addCircle()">Add Circle</button>
+    <button onclick="addLine()">Add Line</button>
+        <div class="font-controls">
+            <select id="fontFamily" onchange="changeFontFamily()">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <input type="number" id="fontSize" placeholder="Font Size" onchange="changeFontSize()">
+            <input type="color" id="fontColor" onchange="changeFontColor()">
+        </div>
+
+        <div class="align-controls">
+            <button onclick="alignText('left')">Align Left</button>
+            <button onclick="alignText('center')">Align Center</button>
+            <button onclick="alignText('right')">Align Right</button>
+        </div>
+    </div>
+
+    <div class="slides-panel">
+        <ul id="slidesList"></ul>
+    </div>
+
+    <div class="canvas-container">
+        <div id="canvas" class="canvas" contenteditable="false"></div>
+    </div>
+
+    <input type="file" id="imageUpload" style="display:none" onchange="loadImage(event)">
+    
+    <script src="pp.js"></script>
+</body>
+</html>

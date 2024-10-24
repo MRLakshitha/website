@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static PowerPoint Toolbar</title>
+    <link rel="stylesheet" href="power.css">
+</head>
+<body>
+    <div class="toolbar">
+        <h5>JYANAM</h5>
+        <div class="tab">
+            <button>File</button>
+            <button>Home</button>
+            <button>Insert</button>
+            <button>Design</button>
+            <button>Transitions</button>
+            <button>Animations</button>
+            <button>Slide Show</button>
+            <button>Review</button>
+            <button>View</button>
+            <button>Help</button>
+        </div>
+        <div class="toolbar-content">
+            <div class="section">
+                <h4>Clipboard</h4>
+                <button>Cut</button>
+                <button>Copy</button>
+                <button>Paste</button>
+            </div>
+            <div class="section">
+                <h4>Slides</h4>
+                <div class="slides-area">
+                    <div class="slides-container" id="slides-container">
+                        <!-- Default slide -->
+                        <div class="slide">Slide 1</div>
+                    </div>
+                    <button class="add-slide-btn]]" onclick="addSlide()">Slide show</button>
+                </div>
+                
+                <script src="slide.js"></script>
+                
+                <button>Layout</button>
+                <button>Reset</button>
+                <button>Section</button>
+            </div>
+            <div class="section">
+                <h4>Font</h4>
+                <select>
+                    <option>Calibri Light</option>
+                    <option>Arial</option>
+                    <option>Times New Roman</option>
+                    <option>Roman</option>
+                    <option>Arial Black</option>
+                </select>
+                <input type="number" value="60">
+                <div class="font-controls">
+                    <button><b>B</b></button>
+                    <button>I</button>
+                    <button>U</button>
+                    <button>Aa</button>
+                </div>
+            </div>
+            <div class="section">
+                <h4>Paragraph</h4>
+                <button>Align Left</button>
+                <button>Align Center</button>
+                <button>Align Right</button>
+            </div>
+            <div class="section">
+                <h4>Drawing</h4>
+                <button>Shapes</button>
+                <button>Arrange</button>
+                <button>Quick Styles</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- body -->
+     <!-- <div class="slide">
+    <div id="slideid1" class="slide-row">
+        <div id="slideid2" class="slide-cell">
+        </div>
+        <div id="slideid3" class="slide-cell">
+          <div class="slide1-row" id="slideid4">
+            <div class="gjs-cell" id="slideid5">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>  -->
+      <div class="grid-container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar {
+    background-color: #f3f3f3;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.workspace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.slides-list {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-left: 20px; 
+}
+
+.slidesNav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+canvas {
+    border: 1px solid #000;
+    background-color: #fff;
+}

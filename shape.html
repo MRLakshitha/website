@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPoint Clone</title>
+    <link rel="stylesheet" href="shape.css">
+</head>
+<body>
+    <!-- Ribbon Menu -->
+    <div class="ribbon">
+        <div class="group">
+            <button onclick="addNewSlide()">New Slide</button>
+            <button onclick="deleteSlide()">Delete Slide</button>
+            <button onclick="changeLayout()">Layout</button>
+        </div>
+        <div class="group">
+            <button onclick="toggleBold()">B</button>
+            <button onclick="toggleItalic()">I</button>
+            <button onclick="toggleUnderline()">U</button>
+        </div>
+        <div class="group">
+            <button onclick="insertShape('rect')">Rectangle</button>
+            <button onclick="insertShape('circle')">Circle</button>
+            <button onclick="insertShape('line')">Line</button>
+        </div>
+        <div class="group">
+            <button onclick="findReplace()">Find & Replace</button>
+        </div>
+    </div>
+
+    <!-- Slide Sidebar and Workspace -->
+    <div class="container">
+        <div class="sidebar">
+            <div class="slide-thumbnail" onclick="selectSlide(1)">Slide 1</div>
+        </div>
+        <div class="workspace">
+            <canvas id="slideCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+    <script src="shape.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* Basic CSS Reset */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.toolbar {
+    background-color: #c5501ace;
+    color: white;
+    padding: 5px;
+}
+ .toolbar h5{
+    color: azure;
+    text-align: center;
+    align-items: center;
+    
+} 
+.tab button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.tab button:hover {
+    background-color: #ebe2e1;
+    padding: 5px;
+    color: black;
+    padding-bottom: 7px;
+}
+
+.toolbar-content {
+    display: flex;
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.section {
+    margin-right: 50px;
+    display: inline;
+    text-decoration: transparent;
+}
+
+.section h4 {
+    display: flex;
+    font-size: 14px;
+    color: #333;
+}
+
+button {
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+select {
+    padding: 5px;
+}
+
+.font-controls button {
+    margin-right: 5px;
+}
+/*.slide {
+    box-sizing: border-box;
+  }
+  /* body {
+    margin: 0;
+  } 
+  .slide {
+    display:flex;
+    justify-content:flex-start;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    padding:10px;
+  }
+  .slide-left{
+    min-height:75px;
+    flex-grow:1;
+    flex-basis:100%;
+  }
+  #slideid2{
+    flex-basis:20%;
+  }
+  #slideid3{
+    flex-basis:70%;
+  }
+  #slideid1{
+    height:557px;
+  }
+  #slideid4{
+    display:flex;
+    padding:28px 21px 31px 21px;
+    height:536px;
+  }
+  #slideid5{
+    flex-basis:99%;
+  }
+  @media (max-width: 768px){
+    .slide1-row{
+      flex-wrap:wrap;
+    }
+  }*/
+  .grid-container {
+    display: grid;
+    grid: 150px / auto auto auto;
+    grid-gap: 10px;
+  
+    padding: 10px;
+  }
+  
+  .item1 {
+    border-style: solid;
+     height: 500px;
+     width: 100%;
+    border-color: rgb(8, 8, 8);
+    border-width: 3px;
+    text-align: center;
+     padding: 20px 0 20px 0; 
+    font-size: 30px;
+    border-width: 3px;
+
+    
+  }
+  .item2 {
+    border-style: solid;
+   height: 500px;
+    width:198%;
+    border-color: rgb(16, 19, 19);
+    border-width: 3px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+
+  }

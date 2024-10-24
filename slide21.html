@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPoint-like Tool</title>
+    <link rel="stylesheet" href="slide21.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button onclick="addSlide()">Add Slide</button>
+        <button onclick="addTextBox()">Add Text Box</button>
+        <button onclick="addShape()">Add Shape</button>
+        <button onclick="alignTextLeft()">Align Left</button>
+        <button onclick="alignTextCenter()">Align Center</button>
+        <button onclick="alignTextRight()">Align Right</button>
+        <button onclick="increaseFontSize()">Increase Font Size</button>
+        <button onclick="decreaseFontSize()">Decrease Font Size</button>
+        <button onclick="deleteElement()">Delete</button>
+    </div>
+    
+    <div class="slides-panel">
+        <ul id="slidesList"></ul>
+    </div>
+    
+    <div class="canvas-container">
+        <div id="canvas" class="canvas" contenteditable="false"></div>
+    </div>
+
+    <script src="slide21.js"></script>
+</body>
+</html>

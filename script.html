@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerPoint-like Web App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Main Toolbar -->
+<div class="toolbar">
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active">Home</button>
+    <button class="tab">Insert</button>
+    <button class="tab">Design</button>
+    <button class="tab">Transitions</button>
+    <button class="tab">Animations</button>
+    <button class="tab" onclick="addNewSlide()">New Slide</button>
+    <button class="tab" onclick="deleteSlide()">Delete Slide</button>
+  
+    <button class="tab">Review</button>
+    <button class="tab">View</button>
+</div>
+
+  <!-- Tool Buttons -->
+  <div class="tool-buttons">
+    <button class="tool-btn">New Slide</button>
+    <button class="tool-btn">Layout</button>
+    <button class="tool-btn">Cut</button>
+    <button class="tool-btn">Copy</button>
+    <button class="tool-btn">Paste</button>
+    <button class="tool-btn">Bold</button>
+    <button class="tool-btn">Italic</button>
+    <button class="tool-btn">Underline</button>
+    <button class="tool-btn">Align Left</button>
+    <button class="tool-btn">Center</button>
+    <button class="tool-btn">Align Right</button>
+  
+    <button class="tool-btn"> <div class="shape" draggable="true" ondragstart="startDrag(event, 'rect')">Rectangle</div></button>
+  <button class="tool-btn"> <div class="shape" draggable="true" ondragstart="startDrag(event, 'circle')">Circle</div></button> 
+<button class="tool-btn"> <div class="shape" draggable="true" ondragstart="startDrag(event, 'line')">Line</div></button> 
+</div>
+  </div>
+
+  <!-- Canvas where shapes will be dropped
+  <div class="workspace">
+      <canvas id="slideCanvas" width="800" height="600"></canvas>
+  </div> -->
+
+  <script src="slide4.js"></script>
+  </div>
+  </div>
+</div>
+<!-- 
+Slide Navigation and Display -->
+<div class="slide-container">
+  <!-- Slide Thumbnails -->
+  <div class="slide-thumbnails">
+    <button class="add-slide-btn" onclick="addSlide()">Add Slide</button>
+    <div class="slides-list" id="slides-list">
+      <!-- Dynamically added slide thumbnails will appear here -->
+    </div>
+  </div>
+
+  <!-- Slide Editing Area -->
+  <div class="slide-editor">
+    <div class="slide" id="current-slide">
+      <h2></h2>
+ <!-- Canvas where shapes will be dropped -->
+ <div class="workspace">
+  <canvas id="slideCanvas" width="800" height="450"></canvas>
+</div>
+    </div>
+  </div>
+</div>
+
+<script src="slide.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag-and-Drop Shapes</title>
+    <link rel="stylesheet" href="slide4.css">
+</head>
+<body>
+    <!-- Toolbar with draggable shapes -->
+    <div class="toolbar">
+        <div class="shape" draggable="true" ondragstart="startDrag(event, 'rect')">Rectangle</div>
+        <div class="shape" draggable="true" ondragstart="startDrag(event, 'circle')">Circle</div>
+        <div class="shape" draggable="true" ondragstart="startDrag(event, 'line')">Line</div>
+    </div>
+
+    <!-- Canvas where shapes will be dropped -->
+    <div class="workspace">
+        <canvas id="slideCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <script src="slide4.js"></script>
+</body>
+</html>

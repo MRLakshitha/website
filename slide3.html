@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPoint Clone</title>
+    <link rel="stylesheet" href="slide3.css">
+</head>
+<body>
+    <!-- Ribbon Menu 
+    <div class="ribbon">
+        <div class="group">
+            <button onclick="addNewSlide()">New Slide</button>
+            <button onclick="deleteSlide()">Delete Slide</button>
+            <button onclick="changeLayout()">Layout</button>
+        </div>
+        <div class="group">
+            <button onclick="toggleBold()">B</button>
+            <button onclick="toggleItalic()">I</button>
+            <button onclick="toggleUnderline()">U</button>
+        </div>
+        <div class="group">
+            <button onclick="insertShape('rect')">Rectangle</button>
+            <button onclick="insertShape('circle')">Circle</button>
+            <button onclick="insertShape('line')">Line</button>
+        </div>
+        <div class="group">
+            <button onclick="findReplace()">Find & Replace</button>
+        </div>
+    </div>
+
+    <!-- Slide Sidebar and Workspace 
+    <div class="container">
+        <div class="sidebar">
+            <div class="slide-thumbnail" onclick="selectSlide(1)">Slide 1</div>
+        </div>
+        <div class="workspace">
+            <canvas id="slideCanvas" width="800" height="300"></canvas>
+        </div>
+    </div>
+
+    <script src="slide.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPoint Clone</title>
+    <link rel="stylesheet" href="slide3.css">
+</head>
+<body>
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <!-- Slide management -->
+        <button onclick="addSlide()">New Slide</button>
+        <button onclick="deleteSlide()">Delete Slide</button>
+        <button onclick="duplicateSlide()">Duplicate Slide</button>
+
+        <!-- Text styling -->
+        <select id="fontFamily" onchange="changeFontFamily()">
+            <option value="Arial">Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Courier New">Courier New</option>
+        </select>
+        <select id="fontSize" onchange="changeFontSize()">
+            <option value="12">12px</option>
+            <option value="16">16px</option>
+            <option value="20">20px</option>
+            <option value="24">24px</option>
+        </select>
+        <button onclick="toggleBold()">Bold</button>
+        <button onclick="toggleItalic()">Italic</button>
+        <input type="color" id="fontColor" onchange="changeFontColor()"/>
+
+        <!-- Shapes -->
+        <button onclick="drawShape('rect')">Rectangle</button>
+        <button onclick="drawShape('circle')">Circle</button>
+
+        <!-- Image -->
+        <input type="file" id="imageUpload" onchange="uploadImage()"/>
+    </div>
+
+    <!-- Slides navigation -->
+    <div class="slide-nav">
+        <ul id="slidesList"></ul>
+    </div>
+
+    <!-- Workspace for slides -->
+    <div class="workspace">
+        <canvas id="slideCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <script src="slide3.js"></script>
+</body>
+</html>

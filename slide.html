@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPoint-like Interface</title>
+    <link rel="stylesheet" href="slide.css">
+</head>
+<body>
+
+<div class="navbar">
+    <!-- Tabs for different menus -->
+    <div class="menu-tabs">
+        <button class="menu-tab active">Home</button>
+        <button class="menu-tab">Insert</button>
+        <button class="menu-tab">Design</button>
+        <button class="menu-tab">Transitions</button>
+        <button class="menu-tab">Animations</button>
+        <button class="menu-tab" >Slide Show</button>
+        <button class="menu-tab">Review</button>
+        <button class="menu-tab">View</button>
+    </div>
+
+    <!-- Toolbar section (buttons and tools) -->
+    <div class="toolbar">
+        <!-- Clipboard section -->
+        <div class="tool-group clipboard">
+            <button class="tool-btn">Cut</button>
+            <button class="tool-btn">Copy</button>
+            <button class="tool-btn">Paste</button>
+        </div>
+
+        <!-- Slides section -->
+        <div class="tool-group slides">
+            <button class="tool-btn">New Slide</button>
+            <button class="tool-btn">Layout</button>
+            <button class="tool-btn">Reset</button>
+        </div>
+
+        <!-- Font section -->
+        <div class="tool-group font">
+            <button class="tool-btn">Bold</button>
+            <button class="tool-btn">Italic</button>
+            <button class="tool-btn">Underline</button>
+            <!-- Add other font controls here -->
+        </div>
+
+        <!-- Paragraph section -->
+        <div class="tool-group paragraph">
+            <button class="tool-btn">Align Left</button>
+            <button class="tool-btn">Center</button>
+            <button class="tool-btn">Align Right</button>
+            <!-- Add other paragraph controls here -->
+        </div>
+
+        <!-- Drawing section -->
+        <div class="tool-group drawing">
+            <button class="tool-btn">Shape</button>
+            <button class="tool-btn">Shape Fill</button>
+            <button class="tool-btn">Shape Outline</button>
+        </div>
+
+        <!-- Editing section -->
+        <div class="tool-group editing">
+            <button class="tool-btn">Find</button>
+            <button class="tool-btn">Replace</button>
+            <button class="tool-btn">Select</button>
+        </div>
+    </div>
+</div>
+
+<!-- Slide Area -->
+<div class="slides-area">
+    <div class="slides-container" id="slides-container">
+        <!-- Default slide -->
+        <div class="slide">Slide 1</div>
+    </div>
+    <button class="add-slide-btn]]" onclick="addSlide()">Slide show</button>
+</div>
+
+<script src="slide.js"></script>
+
+</body>
+</html>
